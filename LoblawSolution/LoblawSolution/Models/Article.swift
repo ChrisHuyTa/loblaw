@@ -15,6 +15,6 @@ struct ArticleWrapper: Codable {
 
 struct Article: Codable {
     var title: String
-    var thumbnail: String
+    var thumbnailUrl: String
     var selftext: String
 }

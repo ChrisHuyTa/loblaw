@@ -57,15 +57,15 @@ extension MainViewController: UITableViewDataSource {
         
         cell.titleLabel.text = article.title
         cell.thumbnail.image = nil
-        if article.thumbnail.contains("http"),
-            let imgUrl = URL(string: article.thumbnail) {
+        if article.thumbnailUrl.contains("http"),
+            let imgUrl = URL(string: article.thumbnailUrl) {
             
-            if let image = self.imageCache[article.thumbnail] {
+            if let image = self.imageCache[article.thumbnailUrl] {
                 cell.thumbnail.image = image
             } else {
             
                 cell.thumbnail.loadImage(from: imgUrl, contentMode: .scaleAspectFit) { (image) in
-                    self.imageCache[article.thumbnail] = image
+                    self.imageCache[article.thumbnailUrl] = image
                     tableView.beginUpdates()
                     tableView.endUpdates()
                 }
@@ -85,7 +85,7 @@ extension MainViewController: UITableViewDelegate {
         
         let vc = ArticleDetailViewController()
         vc.article = article
-        if let articleThumbnail = self.imageCache[article.thumbnail] {
+        if let articleThumbnail = self.imageCache[article.thumbnailUrl] {
             vc.cachedArticleImage = articleThumbnail
         }
         self.navigationController?.pushViewController(vc, animated: true)
