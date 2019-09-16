@@ -20,7 +20,6 @@
 		7925740D232B326C0087E516 /* ListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7925740B232B326C0087E516 /* ListingTableViewCell.xib */; };
 		79257410232C1F390087E516 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925740F232C1F390087E516 /* UIImageView+.swift */; };
 		79257413232C298C0087E516 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79257411232C298C0087E516 /* ArticleDetailViewController.swift */; };
-		79257414232C298C0087E516 /* ArticleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79257412232C298C0087E516 /* ArticleDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		7925740B232B326C0087E516 /* ListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingTableViewCell.xib; sourceTree = "<group>"; };
 		7925740F232C1F390087E516 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		79257411232C298C0087E516 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
-		79257412232C298C0087E516 /* ArticleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				79257411232C298C0087E516 /* ArticleDetailViewController.swift */,
-				79257412232C298C0087E516 /* ArticleDetailViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -244,7 +241,6 @@
 				792573E9232B22D30087E516 /* LaunchScreen.storyboard in Resources */,
 				792573E6232B22D30087E516 /* Assets.xcassets in Resources */,
 				7925740D232B326C0087E516 /* ListingTableViewCell.xib in Resources */,
-				79257414232C298C0087E516 /* ArticleDetailViewController.xib in Resources */,
 				792573E4232B22D20087E516 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
